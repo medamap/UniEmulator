@@ -8,10 +8,6 @@
   "keywords": [
     "Emulator"
   ],
-  "dependencies": {
-    "com.cysharp.unitask": "2.3.2",
-    "com.neuecc.unirx": "7.1.0"
-  },
   "author": {
     "name": "MedamaP",
     "url": "https://twitter.com/medamap/"
