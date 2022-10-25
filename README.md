@@ -13,3 +13,7 @@
 https://github.com/medamap/UniEmulator.git
 ```
 
+## 依存ライブラリ
+
+- UniTask と UniRx が必要です
+
