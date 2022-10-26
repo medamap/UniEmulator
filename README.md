@@ -17,3 +17,7 @@ https://github.com/medamap/UniEmulator.git
 
 - UniTask と UniRx が必要です
 
+## 更新履歴
+
+- V0.0.2 ... キーボード入力に対応
+- V0.0.1 ... とりあえず起動
