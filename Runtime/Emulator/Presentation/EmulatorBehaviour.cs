@@ -84,21 +84,24 @@ namespace jp.megamin.UniEmulator.Runtime.Emulator.Presentation
                 // 0x200: kana
                 // 0x400: alphabet
                 // 0x800: ALPHABET
-                case KeyCode.LeftShift: case KeyCode.RightShift: return 0x10; // Shift
                 case KeyCode.Backspace: return 0x08; // BS
                 case KeyCode.Tab: return 0x09; // Tab
                 case KeyCode.Return: return 0x0d; // Enter
+                case KeyCode.LeftShift: case KeyCode.RightShift: return 0x10; // Shift
+                case KeyCode.LeftControl: case KeyCode.RightControl: return 0x11; // Control
+                case KeyCode.LeftAlt: case KeyCode.RightAlt: return 0x12; // Alt
+                case KeyCode.Pause: return 0x13; // Pause
+                case KeyCode.CapsLock: return 0x14; // Capslock
                 case KeyCode.Escape: return 0x1b; // Escape
-                case KeyCode.Space: // ' '
-                case KeyCode.Exclaim: return 0x21; // '!'
-                case KeyCode.DoubleQuote: return 0x22; // '"'
-                case KeyCode.Hash: return 0x23; // '#'
-                case KeyCode.Dollar: return 0x24; // '$'
-                case KeyCode.Percent: return 0x25; // '%'
-                case KeyCode.Ampersand: return 0x26; // '&'
-                case KeyCode.Quote: return 0x27; // '''
-                case KeyCode.LeftParen: return 0x28; // '('
-                case KeyCode.RightParen: return 0x29; // ')'
+                case KeyCode.Space: return 0x20; // ' '
+                case KeyCode.PageUp: return 0x21; // PageUp
+                case KeyCode.PageDown: return 0x22; // PageDown
+                case KeyCode.End: return 0x23; // End
+                case KeyCode.Home: return 0x24; // Home
+                case KeyCode.LeftArrow: return 0x25; // Left Arrow
+                case KeyCode.UpArrow: return 0x26; // Up Arrow
+                case KeyCode.RightArrow: return 0x27; // Right Arrow
+                case KeyCode.DownArrow: return 0x28; // Down Arrow
                 case KeyCode.Asterisk: case KeyCode.KeypadMultiply: return 0x2a; // '*'
                 case KeyCode.Plus: case KeyCode.KeypadPlus: return 0x2b; // '+'
                 case KeyCode.Comma: return 0x2c; // ','
@@ -154,10 +157,18 @@ namespace jp.megamin.UniEmulator.Runtime.Emulator.Presentation
                 case KeyCode.Caret: return 0x5e; // '^'
                 case KeyCode.Underscore: return 0x5f; // '_'
                 case KeyCode.BackQuote: return 0x60; // '`'
-                case KeyCode.LeftCurlyBracket: return 0x7b; // '{'
-                case KeyCode.Pipe: return 0x7c; // '|'
-                case KeyCode.RightCurlyBracket : return 0x7d; // '}'
-                case KeyCode.Tilde: return 0x7e; // '~'
+                case KeyCode.F1: return 0x70; // F1
+                case KeyCode.F2: return 0x71; // F2
+                case KeyCode.F3: return 0x72; // F3
+                case KeyCode.F4: return 0x73; // F4
+                case KeyCode.F5: return 0x74; // F5
+                case KeyCode.F6: return 0x75; // F6
+                case KeyCode.F7: return 0x76; // F7
+                case KeyCode.F8: return 0x77; // F8
+                case KeyCode.F9: return 0x78; // F9
+                case KeyCode.F10: return 0x79; // F10
+                case KeyCode.F11: return 0x7a; // F11
+                case KeyCode.F12: return 0x7b; // F12
                 default: return 0x0;
             }
         }
